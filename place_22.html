@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <style media="screen">
+  body
+  {
+    background-color: #d6e0f0;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+  }
+    .bg-img {
+
+      min-height: 673px;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+    }
+    .image2 {
+    width:1200px;
+    height:400px;
+    padding-left: 160px;
+  }
+  .para1 {
+    background-color: #89beb3;
+    width: 1100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    color: white;
+  }
+
+  </style>
+  <body>
+    <div class="topnav">
+      <a href="ex.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <div class="dropdown">
+            <button class="dropbtn">Places
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="place_1.html">Manali</a>
+              <a href="place_2.html">Nainital</a>
+              <a href="place_3.html">Mussoorie</a>
+              <a href="place_4.html">Rishikesh</a>
+
+            </div>
+          </div>
+          <a href="index10.html">Search</a>
+      <div class="topnav-right">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+
+    <h1><center>Let's have fun in Nainital!!</center></h1>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="h1.jpg" style="width:100%">
+    <div class="container">
+      <button class="btn"><a class="cl1" href="place_221.html"><b>Let's Go!!</b></a></button>
+    </div>
+    <div class="container1">
+  <div class="content">
+    <h1><center>
+      Hotel Booking
+    </center></h1>
+    <p><center>
+      Enjoy your Trekking by staying in Royal Hotel<br>Click on the "Let's Go" and Book your Hotel Now!!
+    </center></p>
+  </div>
+</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="h2.jpg" style="width:100%">
+    <div class="container">
+      <button class="btn"><a class="cl1" href="place_222.html"><b>Let's Go!!</b></a></button>
+    </div>
+    <div class="container1">
+      <div class="content">
+        <h1><center>
+          Food Ordering
+        </center></h1>
+        <p><center>
+          Get Bored of One Variety of Food<br>Enjoy Variety of Food Items Here by Clicking on "Let's Go" Now!!
+        </center></p>
+      </div>
+</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="h31.jpg" style="width:100%">
+    <div class="container">
+      <button class="btn"><a class="cl1" href="signp.html"><b>Let's Go!!</b></a></button>
+    </div>
+    <div class="container1">
+      <div class="content">
+        <h1><center>
+          Hospital Facility
+        </center></h1>
+        <p><center>
+          Worry in Case of any Mishappening??<br>Don't Worry just take the Hospital Facility by Clicking on "Let's Go" Now!!
+        </center></p>
+      </div>
+</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="h4.jpg" style="width:100%">
+    <div class="container">
+      <button class="btn"><a class="cl1" href="sigup.html"><b>Let's Go!!</b></a></button>
+    </div>
+    <div class="container1">
+      <div class="content">
+        <h1><center>
+          Trekking Activities
+        </center></h1>
+        <p><center>
+          Get Updated with the different Trekiing Activities<br>Click on the "Let's Go" Now!!
+        </center></p>
+      </div>
+</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+
+    </body>
+    </html>
